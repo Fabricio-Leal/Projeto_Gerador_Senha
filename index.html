@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/underscore@latest/underscore-umd-min.js"></script>
+    <link rel="stylesheet" href="./src/css/style.css">
+    
+    <title>Gerador de Senhas</title>
+</head>
+<body>
+    <h1>Password Generator</h1>
+    <div class="container">
+        
+        <div>
+            <label>Quantidade de letras</label>
+            <span id="textAlfa">26</span>
+            <input id="qtdAlfa" type="range" min="0" max="52">
+            
+        </div>
+        <div>
+            <label>Quantidade de números</label>
+            <span id="textNum">5</span>
+            <input id="qtdNum" type="range" min="0" max="10">
+            
+        </div>
+        <div>
+            <label> Quantidade de símbolos</label>
+            <span id="textSimb">12</span>
+            <input id="qtdSimb" type="range" min="0" max="23">
+            
+        </div>
+        <textarea id="resultSenha"></textarea>
+        <button class="btnSenha btn" onclick="gerarPassword()">Gerar Senha</button>   
+    </div>    
+    
+    <script src="./src/js/index.js"></script>
+</body>
+</html>
